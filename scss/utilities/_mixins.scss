@@ -1,0 +1,10 @@
+@mixin font{
+    font-family: lato, sans-serif;
+    font-size: 1rem;
+    color: rgb(78,78,78);
+}
+
+@mixin flexrow {
+    display: flex;
+    flex-direction: row;
+}

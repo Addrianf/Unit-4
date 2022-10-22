@@ -1,0 +1,23 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $hover1;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+ 
+  @each $btn-name, $btn-color in $btn-background-color{
+        .#{$btn-name}{
+          background-color: $btn-color;
+          &:hover{
+            background-color: lighten($btn-color, 15%);
+            transition: .2 ease-in;
+          }
+        }
+  }
