@@ -81,7 +81,7 @@
     }
     
     .nav {
-      @include flewrow;
+      @include flexrow;
       justify-content: flex-end;
       
     }
